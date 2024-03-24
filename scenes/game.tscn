@@ -1,0 +1,56 @@
+[gd_scene load_steps=6 format=3 uid="uid://djq88ydarxj0e"]
+
+[ext_resource type="Texture2D" uid="uid://d1re7dya8yamm" path="res://assets/Table_02.svg" id="1_tnf6m"]
+[ext_resource type="Texture2D" uid="uid://bpw1ttby7iltn" path="res://assets/Paddle_blue.svg" id="2_7gtu0"]
+[ext_resource type="Script" path="res://scripts/Player.gd" id="2_apdrl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kp7ph"]
+size = Vector2(1152, 34)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bsw1p"]
+radius = 70.0286
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Arena" type="Node2D" parent="."]
+
+[node name="Color" type="ColorRect" parent="Arena"]
+offset_right = 1152.0
+offset_bottom = 648.0
+mouse_filter = 1
+color = Color(0, 0, 0, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="Arena"]
+position = Vector2(6.10352e-05, 0)
+scale = Vector2(0.300019, 0.299998)
+texture = ExtResource("1_tnf6m")
+centered = false
+
+[node name="Borders" type="Node2D" parent="Arena"]
+
+[node name="Top" type="Node2D" parent="Arena/Borders"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Arena/Borders/Top"]
+position = Vector2(576, 2)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Arena/Borders/Top/StaticBody2D"]
+position = Vector2(0, -7)
+shape = SubResource("RectangleShape2D_kp7ph")
+
+[node name="Player" type="CharacterBody2D" parent="."]
+position = Vector2(1052, 324)
+input_pickable = true
+motion_mode = 1
+script = ExtResource("2_apdrl")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+position = Vector2(-3.05176e-05, 0)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_7gtu0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+shape = SubResource("CircleShape2D_bsw1p")
+
+[connection signal="input_event" from="Player" to="Player" method="_on_input_event"]
+[connection signal="mouse_entered" from="Player" to="Player" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Player" to="Player" method="_on_mouse_exited"]

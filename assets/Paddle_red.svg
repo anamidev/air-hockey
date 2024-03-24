@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   preserveAspectRatio="none"
+   x="0px"
+   y="0px"
+   width="451.5"
+   height="451.50006"
+   viewBox="0 0 451.5 451.50006"
+   id="svg17"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs12">
+    <radialGradient
+       id="Gradient_1"
+       gradientUnits="userSpaceOnUse"
+       cx="0"
+       cy="0"
+       r="246.25"
+       fx="0"
+       fy="0"
+       gradientTransform="translate(17.3,-5.75)"
+       spreadMethod="pad">
+      <stop
+         offset="47.84313725490196%"
+         stop-color="#930D0D"
+         id="stop1" />
+      <stop
+         offset="80%"
+         stop-color="#C82D2D"
+         id="stop2" />
+      <stop
+         offset="100%"
+         stop-color="#8F1919"
+         id="stop3" />
+    </radialGradient>
+    <radialGradient
+       id="Gradient_2"
+       gradientUnits="userSpaceOnUse"
+       cx="0"
+       cy="0"
+       r="198.75"
+       fx="0"
+       fy="0"
+       gradientTransform="translate(0,-7.65)"
+       spreadMethod="pad">
+      <stop
+         offset="25.49019607843137%"
+         stop-color="#92221D"
+         id="stop4" />
+      <stop
+         offset="80%"
+         stop-color="#C82D2D"
+         id="stop5" />
+      <stop
+         offset="91.76470588235294%"
+         stop-color="#A71D1D"
+         id="stop6" />
+    </radialGradient>
+    <radialGradient
+       id="Gradient_3"
+       gradientUnits="userSpaceOnUse"
+       cx="0"
+       cy="0"
+       r="127.6"
+       fx="0"
+       fy="0"
+       gradientTransform="translate(-78.9,-28.8)"
+       spreadMethod="pad">
+      <stop
+         offset="6.2745098039215685%"
+         stop-color="#9E3333"
+         id="stop7" />
+      <stop
+         offset="18.823529411764707%"
+         stop-color="#9B1212"
+         id="stop8" />
+      <stop
+         offset="73.33333333333333%"
+         stop-color="#822025"
+         id="stop9" />
+    </radialGradient>
+    <radialGradient
+       id="Gradient_4"
+       gradientUnits="userSpaceOnUse"
+       cx="0"
+       cy="0"
+       r="594.45001"
+       fx="0"
+       fy="0"
+       gradientTransform="translate(-284.75,-427.1)"
+       spreadMethod="pad">
+      <stop
+         offset="53.333333333333336%"
+         stop-color="#971E1E"
+         id="stop10" />
+      <stop
+         offset="84.31372549019608%"
+         stop-color="#941D1D"
+         id="stop11" />
+      <stop
+         offset="100%"
+         stop-color="#822025"
+         id="stop12" />
+    </radialGradient>
+  </defs>
+  <g
+     id="paddle_01"
+     transform="translate(-365.45001,-1002.55)">
+    <g
+       id="Layer_1"
+       transform="translate(591.2,1228.3)">
+      <g
+         id="g17">
+        <g
+           id="g16">
+          <g
+             id="g15">
+            <path
+               fill="url(#Gradient_1)"
+               stroke="none"
+               d="m 159.6,-159.65 q -66.1,-66.1 -159.6,-66.1 -93.5,0 -159.65,66.1 -66.1,66.15 -66.1,159.65 0,93.5 66.1,159.6 66.15,66.15 159.65,66.15 93.5,0 159.6,-66.15 66.15,-66.1 66.15,-159.6 0,-93.5 -66.15,-159.65 M 3.1,-182.8 q 77,0 131.4,54.4 54.5,54.5 54.5,131.45 0,77 -54.5,131.45 -54.4,54.45 -131.4,54.45 -77,0 -131.45,-54.45 -54.45,-54.45 -54.45,-131.45 0,-76.95 54.45,-131.45 54.45,-54.4 131.45,-54.4 z"
+               id="path12"
+               style="fill:url(#Gradient_1)" />
+            <path
+               fill="url(#Gradient_2)"
+               stroke="none"
+               d="m 134.5,-128.4 q -54.4,-54.4 -131.4,-54.4 -77,0 -131.45,54.4 -54.45,54.5 -54.45,131.45 0,77 54.45,131.45 54.45,54.45 131.45,54.45 77,0 131.4,-54.45 Q 189,80.05 189,3.05 189,-73.9 134.5,-128.4 m -71.2,72.05 q 0.05,0 0.05,0.05 16.3,16.75 18.85,40.4 Q 84.65,6.4 80.55,23.3 76.45,40.2 61.6,54.35 46.75,68.45 34.65,72.05 22.5,75.65 8.05,77.3 -6.4,78.95 -26,77.5 q -7.02832,-0.515039 -13.45,-1.6 -0.259766,0 -0.55,0 -33.85,0 -57.75,-23.95 -23.9,-23.9 -23.9,-57.75 0,-33.8 23.9,-57.75 23.9,-23.9 57.75,-23.9 9.285352,0 17.8,1.8 9.95,0.61582 16,1.55 6.75,1.05 25.25,4.9 7.25,1.1 14.2,3.6 10.15,3.55 18.9,9.85 6,4.25 11.15,9.4 z"
+               id="path13"
+               style="fill:url(#Gradient_2)" />
+            <path
+               fill="url(#Gradient_3)"
+               stroke="none"
+               d="m 41.65,-5.8 q 0,-33.8 -23.9,-57.75 -17.34414062,-17.344141 -39.95,-22.1 -8.514648,-1.8 -17.8,-1.8 -33.85,0 -57.75,23.9 -23.9,23.95 -23.9,57.75 0,33.85 23.9,57.75 23.9,23.95 57.75,23.95 0.290234,0 0.55,0 33.5048828,-0.205469 57.2,-23.95 23.9,-23.9 23.9,-57.75 z"
+               id="path14"
+               style="fill:url(#Gradient_3)" />
+            <path
+               fill="url(#Gradient_4)"
+               stroke="none"
+               d="m 63.35,-56.3 q 0,-0.05 -0.05,-0.05 -5.15,-5.15 -11.15,-9.4 -8.75,-6.3 -18.9,-9.85 -6.95,-2.5 -14.2,-3.6 -18.5,-3.85 -25.25,-4.9 -6.05,-0.93418 -16,-1.55 22.60585938,4.755859 39.95,22.1 23.9,23.95 23.9,57.75 0,33.85 -23.9,57.75 -23.6951172,23.744531 -57.2,23.95 6.42168,1.084961 13.45,1.6 19.6,1.45 34.05,-0.2 14.45,-1.65 26.6,-5.25 12.1,-3.6 26.95,-17.7 Q 76.45,40.2 80.55,23.3 84.65,6.4 82.2,-15.9 79.65,-39.55 63.35,-56.3 Z"
+               id="path15"
+               style="fill:url(#Gradient_4)" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
