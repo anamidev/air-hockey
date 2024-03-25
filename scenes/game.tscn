@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://djq88ydarxj0e"]
+[gd_scene load_steps=13 format=3 uid="uid://djq88ydarxj0e"]
 
 [ext_resource type="Texture2D" uid="uid://d1re7dya8yamm" path="res://assets/Table_02.svg" id="1_tnf6m"]
 [ext_resource type="Texture2D" uid="uid://bpw1ttby7iltn" path="res://assets/Paddle_blue.svg" id="2_7gtu0"]
@@ -7,14 +7,35 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kp7ph"]
 size = Vector2(1152, 34)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j77k3"]
+size = Vector2(1152, 31)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l6u8d"]
+size = Vector2(33, 201)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h4yy0"]
+size = Vector2(32.8911, 204)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ltlic"]
+size = Vector2(33, 201)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_opjwr"]
+size = Vector2(36, 204)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ch8l2"]
+size = Vector2(32, 220)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nxg8c"]
+size = Vector2(35, 220)
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_bsw1p"]
-radius = 70.0286
+radius = 68.0294
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Arena" type="Node2D" parent="."]
 
-[node name="Color" type="ColorRect" parent="Arena"]
+[node name="FillingColor" type="ColorRect" parent="Arena"]
 offset_right = 1152.0
 offset_bottom = 648.0
 mouse_filter = 1
@@ -36,6 +57,73 @@ position = Vector2(576, 2)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Arena/Borders/Top/StaticBody2D"]
 position = Vector2(0, -7)
 shape = SubResource("RectangleShape2D_kp7ph")
+
+[node name="Bottom" type="Node2D" parent="Arena/Borders"]
+position = Vector2(579, 649)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Arena/Borders/Bottom"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Arena/Borders/Bottom/StaticBody2D"]
+position = Vector2(-3, 5.5)
+shape = SubResource("RectangleShape2D_j77k3")
+
+[node name="RightTop" type="Node2D" parent="Arena/Borders"]
+position = Vector2(1150, 22)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Arena/Borders/RightTop"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Arena/Borders/RightTop/StaticBody2D"]
+position = Vector2(6.5, 90.5)
+shape = SubResource("RectangleShape2D_l6u8d")
+
+[node name="RightBottom" type="Node2D" parent="Arena/Borders"]
+position = Vector2(1150, 537)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Arena/Borders/RightBottom"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Arena/Borders/RightBottom/StaticBody2D"]
+position = Vector2(6.55444, 0)
+shape = SubResource("RectangleShape2D_h4yy0")
+
+[node name="LeftTop" type="Node2D" parent="Arena/Borders"]
+position = Vector2(2, 22)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Arena/Borders/LeftTop"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Arena/Borders/LeftTop/StaticBody2D"]
+position = Vector2(-6.5, 90.5)
+shape = SubResource("RectangleShape2D_ltlic")
+
+[node name="Node2D" type="Node2D" parent="Arena/Borders"]
+position = Vector2(2, 629)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Arena/Borders/Node2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Arena/Borders/Node2D/StaticBody2D"]
+position = Vector2(-8, -92)
+shape = SubResource("RectangleShape2D_opjwr")
+
+[node name="Gates" type="Node2D" parent="Arena"]
+
+[node name="Right" type="Node2D" parent="Arena/Gates"]
+position = Vector2(1151, 321)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Arena/Gates/Right"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Arena/Gates/Right/StaticBody2D"]
+position = Vector2(5, 3)
+shape = SubResource("RectangleShape2D_ch8l2")
+debug_color = Color(0.905882, 0.298039, 0.14902, 0.419608)
+
+[node name="Left" type="Node2D" parent="Arena/Gates"]
+position = Vector2(2, 320)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Arena/Gates/Left"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Arena/Gates/Left/StaticBody2D"]
+position = Vector2(-7.5, 4)
+shape = SubResource("RectangleShape2D_nxg8c")
+debug_color = Color(0.94902, 0.227451, 0, 0.419608)
 
 [node name="Player" type="CharacterBody2D" parent="."]
 position = Vector2(1052, 324)
