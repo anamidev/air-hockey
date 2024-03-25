@@ -1,8 +1,10 @@
-[gd_scene load_steps=13 format=3 uid="uid://djq88ydarxj0e"]
+[gd_scene load_steps=16 format=3 uid="uid://djq88ydarxj0e"]
 
 [ext_resource type="Texture2D" uid="uid://d1re7dya8yamm" path="res://assets/Table_02.svg" id="1_tnf6m"]
 [ext_resource type="Texture2D" uid="uid://bpw1ttby7iltn" path="res://assets/Paddle_blue.svg" id="2_7gtu0"]
 [ext_resource type="Script" path="res://scripts/Player.gd" id="2_apdrl"]
+[ext_resource type="Texture2D" uid="uid://7mrim5a1fx3y" path="res://assets/Puck.svg" id="4_6xuak"]
+[ext_resource type="Script" path="res://scripts/Puck.gd" id="4_a3d2g"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kp7ph"]
 size = Vector2(1152, 34)
@@ -30,6 +32,9 @@ size = Vector2(35, 220)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_bsw1p"]
 radius = 68.0294
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1viuh"]
+radius = 38.0
 
 [node name="Node2D" type="Node2D"]
 
@@ -94,12 +99,12 @@ position = Vector2(2, 22)
 position = Vector2(-6.5, 90.5)
 shape = SubResource("RectangleShape2D_ltlic")
 
-[node name="Node2D" type="Node2D" parent="Arena/Borders"]
+[node name="LeftBottom" type="Node2D" parent="Arena/Borders"]
 position = Vector2(2, 629)
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Arena/Borders/Node2D"]
+[node name="StaticBody2D" type="StaticBody2D" parent="Arena/Borders/LeftBottom"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Arena/Borders/Node2D/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Arena/Borders/LeftBottom/StaticBody2D"]
 position = Vector2(-8, -92)
 shape = SubResource("RectangleShape2D_opjwr")
 
@@ -138,6 +143,19 @@ texture = ExtResource("2_7gtu0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 shape = SubResource("CircleShape2D_bsw1p")
+
+[node name="Puck" type="RigidBody2D" parent="."]
+position = Vector2(576, 324)
+collision_layer = 2
+script = ExtResource("4_a3d2g")
+
+[node name="Sprite2D" type="Sprite2D" parent="Puck"]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("4_6xuak")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Puck"]
+shape = SubResource("CircleShape2D_1viuh")
+debug_color = Color(0, 0.65098, 0.133333, 0.419608)
 
 [connection signal="input_event" from="Player" to="Player" method="_on_input_event"]
 [connection signal="mouse_entered" from="Player" to="Player" method="_on_mouse_entered"]
